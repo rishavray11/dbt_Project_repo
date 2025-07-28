@@ -1,0 +1,42 @@
+version: 2
+
+sources:
+  - name: raw_src
+    database: DBT_PROJECT1_DB  
+    schema: RAW_DATA  
+    tables:
+      - name: RAW_ORDERS
+      - name: RAW_CUSTOMER1
+      - name: PAYMENTS
+      - name: PRODUCTS
+      - name: ORDER_ITEMS
+
+  - name: raw_sf
+    database: SNOWFLAKE_SAMPLE_DATA  
+    schema: TPCH_SF1  
+    tables:  
+       - name: NATION
+
+  - name: raw_inc
+    database: DBT_PROJECT1_DB
+    schema: PUBLIC  
+    tables:  
+       - name: TRANSACTIONS   
+
+  - name: raw_inc1
+    database: DBT_PROJECT1_DB
+    schema: PUBLIC  
+    tables:  
+       - name: TRANSACTIONS1       
+
+  - name: raw_snap
+    database: DBT_PROJECT1_DB
+    schema: PUBLIC  
+    tables:  
+       - name: ORDER_STATUS 
+
+  - name: raw_snap1
+    database: DBT_PROJECT1_DB
+    schema: PUBLIC  
+    tables:  
+       - name: ORDER_STATUS1 

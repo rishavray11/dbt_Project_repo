@@ -3,9 +3,9 @@
         materialized='table'
     )
 }}
-select
+select 
 	ID,
 	NAME,
 	CATEGORY,
 	PRICE
-from DBT_PROJECT_DB.RAW_DATA.PRODUCTS
+from DBT_PROJECT1_DB.RAW_DATA.PRODUCTS

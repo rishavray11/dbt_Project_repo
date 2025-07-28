@@ -3,10 +3,10 @@
         materialized='table'
     )
 }}
-select
+select 
 	ID,
 	ORDER_ID,
 	AMOUNT,
 	PAYMENT_METHOD,
 	PAYMENT_DATE
-from DBT_PROJECT_DB.RAW_DATA.PAYMENTS
+from DBT_PROJECT1_DB.RAW_DATA.PAYMENTS
