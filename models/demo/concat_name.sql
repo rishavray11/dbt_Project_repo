@@ -1,0 +1,1 @@
+select {{concat_macro('rishav','ray')}} as details
